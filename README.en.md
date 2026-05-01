@@ -4,6 +4,17 @@
   <a href="./README.md">中文</a> | <strong>English</strong>
 </p>
 
+<p align="center">
+  <img alt="macOS 14+" src="https://img.shields.io/badge/macOS-14%2B-black?logo=apple">
+  <img alt="Swift" src="https://img.shields.io/badge/Swift-5.9%2B-orange?logo=swift">
+  <a href="https://github.com/xiaopan369/AgentConsole/releases">
+    <img alt="Release" src="https://img.shields.io/github/v/release/xiaopan369/AgentConsole?label=release">
+  </a>
+  <a href="https://github.com/xiaopan369/AgentConsole/releases">
+    <img alt="Downloads" src="https://img.shields.io/github/downloads/xiaopan369/AgentConsole/total?label=downloads">
+  </a>
+</p>
+
 > A local macOS handoff console for developers who switch between coding agents such as Codex and Claude. Agent Console keeps project context, current state, TODOs, decisions, and continuation prompts in a maintainable local handoff workflow.
 
 ![Agent Console Demo](./docs/images/agent-console-demo.png)
@@ -39,6 +50,14 @@ Agent Console turns “switch agents” into a repeatable, checkable, local work
 6. Click “Switch to Claude” or “Switch to Codex”.
 7. Paste the copied continuation prompt into a new chat with the target agent.
 8. After the target agent reads the handoff files and replies with a handoff read receipt, continue the work.
+
+## Privacy
+
+Agent Console is a local macOS app. It does not include a remote service and does not upload your project files, chat content, or handoff data by itself.
+
+Global workspace data is stored in `~/AgentWorkspace` by default, and project handoff data is stored in `.agent-handoff` inside each project.
+
+Any content you paste into Claude, Codex, or another agent is handled under that service’s own privacy policy.
 
 ## Troubleshooting
 
