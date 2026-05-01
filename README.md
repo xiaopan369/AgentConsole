@@ -3,6 +3,17 @@
 <p align="center">
   <strong>中文</strong> | <a href="./README.en.md">English</a>
 </p>
+<p align="center">
+  <img alt="macOS 14+" src="https://img.shields.io/badge/macOS-14%2B-black?logo=apple">
+  <img alt="Swift" src="https://img.shields.io/badge/Swift-5.9%2B-orange?logo=swift">
+  <a href="https://github.com/xiaopan369/AgentConsole/releases">
+    <img alt="Release" src="https://img.shields.io/github/v/release/xiaopan369/AgentConsole?label=release">
+  </a>
+  <a href="https://github.com/xiaopan369/AgentConsole/releases">
+    <img alt="Downloads" src="https://img.shields.io/github/downloads/xiaopan369/AgentConsole/total?label=downloads">
+  </a>
+</p>
+
 
 > 一个面向本地开发者的 macOS 交接控制台：把 Codex、Claude 等 Agent 之间最容易丢失的项目上下文、当前状态、待办事项和续接提示词整理成可持续维护的本地 handoff 工作流。
 
@@ -39,6 +50,15 @@ Agent Console 的目标很简单：把“切换 Agent”变成一个可重复、
 6. 点击“切换到 Claude”或“切换到 Codex”。
 7. 将自动复制的续接提示词粘贴到目标 Agent 的新会话中。
 8. 目标 Agent 读取 handoff 文件并回复交接读取回执后，就可以继续上一轮工作。
+
+## 隐私说明
+
+Agent Console 是本地 macOS 应用，不内置远程服务，也不会主动上传你的项目文件、会话内容或 handoff 数据。
+
+全局工作台数据默认保存在 `~/AgentWorkspace`，项目交接数据保存在对应项目目录下的 `.agent-handoff` 中。
+
+你粘贴到 Claude、Codex 或其他 Agent 的内容，将受对应服务自己的隐私政策约束。
+
 
 ## 常见问题排查
 
